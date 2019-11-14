@@ -8,4 +8,6 @@ Puzzle App is a simple logical game made using JavaFX and FXML designed to devel
 - Java (logic)
 - FXML (desing)
 - Scene Builder (design)
-![](images/puzzle.png)
+
+
+![](imgages/puzzle.png)
