@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #006090;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="334.0" mnemonicParsing="false" onAction="#loadNew" text="Load New" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="290.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="help" layoutX="57.0" layoutY="130.0" mnemonicParsing="false" onAction="#helpStep" text="Help(3)" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <top>
+      <AnchorPane prefHeight="65.0" prefWidth="980.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-6.0" prefHeight="119.0" prefWidth="1180.0" text="Application" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="65.0" prefWidth="980.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="525.0" layoutY="35.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="75.0" prefWidth="580.0" text="Back" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label" layoutX="70.0" layoutY="272.0" prefHeight="27.0" prefWidth="61.0" text="Time" textFill="#f50606" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="200.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="-10.0" layoutY="71.0" prefWidth="167.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="15.0" opacity="0.5" style="-fx-background-color: white;" text="1" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label alignment="CENTER" layoutX="-8.0" layoutY="8.0" opacity="0.5" style="-fx-background-color: white;" text="2" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Label alignment="CENTER" layoutX="-8.0" layoutY="8.0" opacity="0.5" style="-fx-background-color: white;" text="3" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" layoutX="6.0" layoutY="8.0" opacity="0.5" style="-fx-background-color: white;" text="4" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" layoutY="6.0" opacity="0.5" style="-fx-background-color: white;" text="5" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" layoutX="-8.0" layoutY="6.0" opacity="0.5" style="-fx-background-color: white;" text="6" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" layoutX="6.0" layoutY="8.0" opacity="0.5" style="-fx-background-color: white;" text="7" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" layoutY="6.0" opacity="0.5" style="-fx-background-color: white;" text="8" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Label layoutY="8.0" opacity="0.5" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <Label layoutX="71.0" layoutY="54.0" opacity="0.5" style="-fx-background-color: white;" text="Pattern" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <GridPane prefHeight="527.0" prefWidth="606.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#slide1" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Button fx:id="button2" layoutX="7.0" layoutY="2.0" mnemonicParsing="false" onAction="#slide2" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#slide3" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#slide4" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#slide5" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#slide6" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#slide7" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="button8" mnemonicParsing="false" onAction="#slide8" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="button9" mnemonicParsing="false" onAction="#slide9" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="64.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
